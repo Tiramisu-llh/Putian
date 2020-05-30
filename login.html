@@ -1,0 +1,49 @@
+﻿<!--
+ * @Author: 林丽华
+ * @Date: 2020-05-17 16:59:15
+ * @LastEditTime: 2020-05-28 22:12:51
+ * @FilePath: \undefinedc:\Users\lin\Desktop\大三下\JS\期末考核\Putian\login.html
+--> 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <link rel="stylesheet" type="text/css" href="css/maopao.css">
+</head>
+
+<body>
+    <!-- 冒泡特效 -->
+    <div class="wrap">
+        <div class="bubbles" num="50" duration="10">
+        </div>
+    </div>
+    <!-- 登录模块 -->
+    <div class="login-box">
+        <h2>Login&nbsp;&nbsp;Here</h2>
+        <!-- 表单 -->
+        <form action="index.html">
+            <!-- 用户名 -->
+            <div class="login-field">
+                <input type="text" name="userName" required>
+                <label>Username</label>
+            </div>
+            <!-- 密码 -->
+            <div class="login-field">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <!-- 功能按钮 -->
+            <div class="btn">
+                <button type="submit">Submit</button>
+                <button type="submit" onclick="window.location='register.html'">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/maopao.js"></script>
+
+</html>

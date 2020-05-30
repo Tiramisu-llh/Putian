@@ -1,0 +1,209 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 1350px;
+	margin: auto;
+}
+
+.banner img {
+	width: 100%;
+	height: 350px;
+	z-index: -99;
+	position: relative;
+}
+
+.zhuti {
+	height: 50px;
+}
+
+.zhuti img {
+	height: 100px;
+}
+
+.zhuti li {
+	list-style: none;
+	float: left;
+	width: 100px;
+	margin-left: 110px;
+	margin-top: -50px;
+}
+
+#ll {
+	margin-top: 50px;
+	float: left;
+}
+
+h3 {
+	width: 300px;
+	height: 35px;
+	background-color: rgba(224, 224, 224, 1.00);
+	font-size: 15px;
+	text-align: center;
+	margin-left: 200px;
+	padding-top: 10px;
+	box-shadow: 3px 3px 10px #a0a0a0;
+}
+
+section {
+	width: 300px;
+	background-color: #FBD337;
+	margin-left: 200px;
+	text-align: center;
+	color: #FFFFFF;
+	font-family: "microsoftyahei";
+	font-size: 15px;
+	padding: 15px 0px;
+	border-bottom: solid 3px #FFFFFF;
+	cursor: pointer;
+	box-shadow: 3px 3px 10px #a0a0a0;
+}
+
+section:hover {
+	background-color: rgba(42, 42, 42, 0.90);
+}
+
+section div {
+	display: none;
+}
+
+.q1 {
+	position: relative;
+	margin-top: 650px;
+}
+
+.q1 img {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: -602px;
+	left: 645px;
+}
+
+.h1, .h2 {
+	font-size: 20px;
+	position: absolute;
+	top: -590px;
+	left: 710px;
+}
+
+.h2 {
+	color: #A8A7A7;
+	font-size: 15px;
+	top: -562px;
+	left: 722px;
+}
+
+.h3 {
+	margin-left: 1130px;
+	margin-top: -570px;
+	font-size: 13px;
+	color: rgba(68, 68, 68, 1.00);
+}
+
+.q2 {
+	margin-left: 640px;
+	margin-top: 20px;
+}
+
+.q2 img {
+	width: 680px;
+	height: 130px;
+}
+
+.nav1 {
+	width: 680px;
+	height: 35px;
+	margin-left: 640px;
+	margin-top: 10px;
+	background-color: #CBCBCB;
+}
+
+.nav1 li {
+	list-style: none;
+	text-align: center;
+	padding: 4px 0px;
+	cursor: pointer;
+	border-top: 5px solid rgba(123, 123, 123, 1.00);
+}
+
+.nav1 li:hover {
+	background-color: #EDEDED;
+	border-top: 5px solid rgba(250, 95, 37, 1.00);
+}
+
+.z1 {
+	width: 680px;
+	height: 440px;
+	margin-left: 640px;
+	background-color: #FFFFFF;
+	/*设置阴影*/
+	box-shadow: 0 5px 20px #a0a0a0;
+	border-top: none;
+}
+
+.w1 {
+	width: 677px;
+	height: 28px;
+	font-family: "microsoftyahei";
+	font-size: 13px;
+	color: #3E3E3E;
+	padding-top: 8px;
+	padding-left: 8px;
+	cursor: pointer;
+	border-bottom: 1px dashed rgba(0, 0, 0, 0.20);
+}
+
+.w1:hover {
+	color: rgba(235, 10, 13, 0.842);
+}
+
+.w1 p {
+	text-align: right;
+	margin-top: -18px;
+	padding-right: 10px;
+}
+
+.w8 {
+	float: left;
+	width: 300px;
+	height: 100px;
+	margin-left: -300px;
+	margin-top: 630px;
+	background-color: #F1F1F1;
+	box-shadow: 3px 3px 10px #a0a0a0;
+}
+
+.w8 img {
+	width: 100px;
+	height: 100px;
+}
+
+.h4 {
+	margin-left: 150px;
+	margin-top: -75px;
+	font-size: 18px;
+}
+
+.h5 {
+	margin-left: 155px;
+	font-family: "kaiti";
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+/*
+ * 底部
+ */
+
+.footer {
+	background: #333;
+	height: 50px;
+	/* 设置段落的最小高度 */
+	text-align: center;
+	padding-top: 25px;
+	color: #FFFFFF;
+	margin-top: 20px;
+}

@@ -1,0 +1,303 @@
+/*样式重置*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#dd {
+	width: 1348px;
+	margin: auto;
+	/*fixed定义背景图片随滚动轴的移动方式：不移动*/
+	background: url(../images/index.jpg) no-repeat fixed;
+	/* background-position: center center; */
+	/* 把背景图像扩展至足够大，以使背景图像完全覆盖背景区域 */
+	background-size: cover;
+	/* font-family: Tahoma, Arial, Roboto, ”Droid Sans”, ”Helvetica Neue”, ”Droid Sans Fallback”, ”Heiti SC”, sans-self; */
+}
+
+/* 置顶按钮 */
+#goTop {
+	width: 50px;
+	height: 50px;
+	display: block;
+	position: fixed;
+	display: none;
+	bottom: 50px;
+	right: 30px;
+	opacity: 0.8;
+	background: rgb(255, 254, 254);
+	border-radius: 50%;
+	line-height: 55px;
+	text-align: center;
+	font-size: 30px;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+/*
+设置标题高度和背景颜色
+ */
+
+.header, header {
+	line-height: 50px;
+}
+
+.header nav {
+	/* height: 100%; */
+	background: #f1f4f4;
+}
+
+.banner {
+	height: 630px;
+	padding-top: 90px;
+}
+
+.banner .inner {
+	color: #FFFFFF;
+	text-align: center;
+	margin: auto;
+	max-width: 300px;
+	position: relative;
+	top: 160px;
+}
+
+.line {
+	/*莆田边框*/
+	width: 75%;
+	height: 2px;
+	background: #FFFFFF;
+	margin: auto;
+}
+
+h1, .line {
+	margin-bottom: 10px;
+}
+
+.inner p {
+	line-height: 30px;
+	font-size: 18px;
+	/* 字母间距 */
+	letter-spacing: 1px;
+}
+
+.inner button {
+	margin-top: 25px;
+	padding: 15px 30px;
+	border-radius: 5px;
+	/*圆角边框*/
+	background: #F77809;
+	border: none;
+	color: #FFFFFF;
+	/* outline: none; */
+	/*当元素获得焦点的时候，焦点框为0.*/
+	cursor: pointer;
+	/*指针样式*/
+}
+
+.inner button:hover {
+	transform: rotate(720deg) scale(2);
+	/*旋转 定义 2D 旋转，在参数中规定角度   定义 2D 缩放转换大小*/
+	transition: 2s;
+	/*过度2s*/
+}
+
+/*
+ * 中间
+ */
+
+.content {
+	opacity: 0.8;
+	/*设置不透明度*/
+}
+
+.part_1 {
+	text-align: center;
+	color: #FFFFFF;
+	background: #f7b66a;
+	padding-top: 65px;
+	opacity: 0.95;
+	padding-bottom: 60px;
+}
+
+.wraper {
+	margin: auto;
+	/* max-width: 1080px; */
+}
+
+.wraper h2 {
+	padding: 15px 0;
+	font-size: 27px;
+}
+
+.wraper .line {
+	/*那个透明的线*/
+	margin: 15px auto;
+	width: 50%;
+	background: #AF9E9E;
+}
+
+.wraper p {
+	padding: 15px 0;
+	font-size: 18px;
+	letter-spacing: 1px;
+	/*文字与文字间的间距*/
+}
+
+.icon {
+	margin: 30px auto;
+	margin-bottom: 0;
+	padding-bottom: 30px;
+}
+
+span img {
+	width: 83px;
+	height: 114px;
+	margin-top: -5px;
+	margin-right: 70px;
+}
+
+/*
+ * 第二部分
+ */
+
+.part_2 {
+	background-color: #3B3E5B;
+	opacity: 0.9;
+}
+
+.first_left {
+	width: 45%;
+}
+
+.first_left img {
+	width: 100%;
+}
+
+.first div {
+	float: left;
+}
+
+.clear_fix:after {
+	/* 利用CSS来输出内容，这一句是确保浏览器兼容性的 */
+	content: '';
+	display: block;
+	/* 不允许有浮动对象 */
+	clear: both;
+}
+
+.first_text {
+	position: relative;
+	top: 30px;
+	left: 50px;
+	width: 51%;
+	color: #FFFFFF;
+}
+
+.first_text h2 {
+	margin-left: 250px;
+	font-size: 24px;
+	margin-bottom: 12px;
+}
+
+.kp {
+	text-indent: 2em;
+	font-weight: bold;
+	width: 90%;
+	font-size: 18px;
+	line-height: 32px;
+	;
+}
+
+.first:nth-child(odd) {
+	/*even*/
+	background: #3B3E5B;
+	opacity: 0.9;
+}
+
+/*
+ * 第三部分
+ */
+
+.part_3 {
+	background-color: #628dce;
+	opacity: 0.9;
+	color: #FFFFFF;
+}
+
+.three_wrap {
+	margin: auto;
+	width: 60%;
+}
+
+.three_wrap .three_text {
+	padding-top: 65px
+}
+
+.three_text h2 {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.three_text .line {
+	background-color: #095984;
+	width: 55%;
+	margin-bottom: 20px;
+}
+
+.card {
+	min-height: 300px;
+	width: 50%;
+	padding: 30px;
+	float: left;
+	/* max-width: 461px; */
+	/* box-sizing现代浏览器都支持，但IE家族只有IE8版本以上才支持，
+	虽然现代浏览器支持box-sizing，但有些浏览器还是需要加上自己的前缀，
+	Mozilla需要加上-moz-，Webkit内核需要加上-webkit-，Presto内核-o-,
+	IE8-ms-，所以box-sizing兼容浏览器时需要加上各自的前缀 */
+	/* 规定两个并排的带边框的框 */
+	box-sizing: border-box;
+	margin: 10px 0px;
+}
+
+.card h2 {
+	text-align: center;
+}
+
+.card img {
+	width: 352px;
+	height: 291px;
+	margin-top: 20px;
+}
+
+/*
+ * 设置6个格子的背景颜色
+ */
+
+.card:nth-child(1), .card:nth-child(4), .card:nth-child(5) {
+	background: rgba(0, 0, 0, 0.7);
+	/*，rgba是CSS3中的属性。rgba括号中前3个数字代表着red green blue
+	三种颜色的rgb值（0-255），最后一个是设定这个颜色的透明度即alpha值。
+	范围从0到1，越接近1，代表透明度越低。*/
+}
+
+.card:nth-child(2), .card:nth-child(3), .card:nth-child(6) {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+/*
+ * 底部
+ */
+
+.footer {
+	background: #333;
+	height: 50px;
+	/* 设置段落的最小高度 */
+	text-align: center;
+	padding-top: 25px;
+	color: #FFFFFF;
+}

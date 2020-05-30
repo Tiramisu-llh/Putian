@@ -1,0 +1,93 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(../images/login.jpg);
+    background-size: cover;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.404);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+}
+
+.login-box .login-field {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.login-box .login-field input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    /* outline （轮廓）是绘制于元素周围的一条线 */
+    outline: none;
+    background: transparent;
+}
+
+.login-box .login-field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 文本字符框之间插入多少空间 */
+    letter-spacing: 2px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    /* 元素实体 “虚化”。 
+    pointer-events: none;*/
+    /* 设置元素当过渡效果 */
+    transition: 1s;
+}
+
+/* 实现input在触发焦点时更改样式，通常会想到使用:focus选择器 */
+
+/* 使用伪类 :focus  :valid*/
+
+/* :valid CSS 伪类表示内容验证正确的<input> 或其他 <form> 元素。 */
+
+.login-box .login-field input:focus~label, .login-box .login-field input:valid~label {
+    top: -23px;
+    left: 0;
+    color: aqua;
+    font-size: 12px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn button {
+    margin: 0px 20px;
+    /*背景透明。background默认透明
+    background: transparent; */
+    border: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    /* 规定要显示的光标的类型 */
+    cursor: pointer;
+    border-radius: 5px;
+}
+.success, .error {
+	color: rgba(214, 80, 80, 0.76);
+}
